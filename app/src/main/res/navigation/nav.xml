@@ -13,10 +13,22 @@
         <action
             android:id="@+id/action_login_to_sign_up"
             app:destination="@id/sign_up" />
+        <action
+            android:id="@+id/action_login_to_startPage"
+            app:destination="@id/startPage" />
     </fragment>
     <fragment
         android:id="@+id/sign_up"
         android:name="com.example.login_sign_up.sign_up"
         android:label="fragment_sign_up"
-        tools:layout="@layout/fragment_sign_up" />
+        tools:layout="@layout/fragment_sign_up" >
+        <action
+            android:id="@+id/action_sign_up_to_startPage"
+            app:destination="@id/startPage" />
+    </fragment>
+    <fragment
+        android:id="@+id/startPage"
+        android:name="com.example.login_sign_up.StartPage"
+        android:label="fragment_start_page"
+        tools:layout="@layout/fragment_start_page" />
 </navigation>
